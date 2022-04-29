@@ -1,0 +1,21 @@
+[
+    {
+        "Name":"Michael Coperfield",
+        "Email":"michael@gmai.com",
+        "Job":"Mechanic",
+        "Comment":"This is awesome!"
+
+    },
+    {
+        "Name":"Bojan Jelovina",
+        "Email":"boki@gmail.com",
+        "Job":"Car Racer",
+        "Comment":"I found all car parts that i need!"  
+    },
+    {
+        "Name":"Jason Mount",
+        "Email":"mount@gmai.com",
+        "Job":"Mechanic",
+        "Comment":"I wanna car just like that nissan!" 
+    }
+]

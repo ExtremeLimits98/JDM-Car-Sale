@@ -1,0 +1,1482 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    padding: 10px 40px 0; 
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./Japan.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+ /*Hamb*/
+ nav .navLink {
+    display: flex;
+    list-style: none;
+}
+  nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+ nav .navLink .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    nav .navLink {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease-in-out;
+        display: none;
+        text-align: center;
+    }
+    nav .navLink .closeMenu  {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .navLink li a{
+        font-size: 25px;
+    }
+    nav .navLink li a:hover{
+        background: none;
+        color: rgb(3, 1, 102);
+    }
+    nav .navLink {
+        background-color: rgb(0, 0, 0);
+    }
+    .header .text-box h1{
+        font-size: 40px;
+    }
+    .newsletter h2{
+        text-align: center;
+    }
+ }
+/*End of Hamb*/
+
+
+nav img{
+    width: 150px;
+}
+.navLink ul,li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+.navLink ul,li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navLink ul,li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navLink ul,li:hover::after{
+      width: 100%;
+}
+
+.text-box{
+   width: 90%;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.text-box h1{
+     font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.hero-btn:hover{
+    border: 1px solid #000000;
+    background: #ffffff;
+    transition: 1s;
+}
+/*End of Header*/
+
+.heading {
+    text-align: center;
+}
+.heading span {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.heading h1{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+.ride-container{
+    margin-bottom: 2rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.ride-container .box{
+    text-align: center;
+    padding: 20px;
+}
+.ride-container .box .fas{
+    font-size: 34px;
+    padding: 10px;
+    background:  #000;
+    border-radius: 0.5rem;
+    color: #fff
+}
+.ride-container .box h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 1.4rem 0 0.5rem;
+}
+.ride-container .box .fas:hover, .ride-container .fas .fas-fa-home{
+    background: var(--gradient);
+    color: #000;
+}
+/*End of Deal*/
+.article{
+    padding: 30px;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./NSX.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.article h1{
+    color: rgb(255, 255, 255);
+}
+.article h1::after{
+    content: '';
+    background-color: rgb(255, 255, 255);
+    display: block;
+    height: 2px;
+    width: 230px;
+    margin: 20px auto 5px;
+ }
+ .article a{
+     list-style: none;
+     color: #000;
+     outline: none;
+     text-decoration: none !important;
+ }
+ .article a:hover{
+     color:  rgb(118, 3, 146);
+     transition: 0.3s;
+ }
+ .article p{
+     font-size: 21px;
+     padding: 10px;
+ }
+ .article span{
+     color: rgb(0, 0, 0);
+ }
+ .article .card{
+     margin-bottom: 20px;
+    padding: 5px;
+ }
+ .card .fas {
+    font-size: 20px;
+    padding: 2px;
+    color: rgb(5, 5, 5);
+ }
+ 
+ #name{
+     padding: 10px;
+ }
+ small{
+    padding: 10px;
+ }
+ small a{
+    height: 70px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background: #eee;
+    font-weight: 900;
+    margin-top: 30px;
+    text-decoration: none !important;
+    padding: 5px;
+ }
+ /*End of Products*/
+ .heading h1{
+     color: rgb(0, 0, 0);
+     font-size: 35px;
+     padding: 20px;
+     box-shadow:1px 4px 41px rgba(0,0,0.1); ;
+ }
+ .reviews {
+    background-color: rgb(255, 255, 255);
+}
+
+ .reviews-container{
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+     gap: 1rem;
+     margin-top: 2rem;
+ }
+ .rev-img {
+     width: 70px;
+     height: 70px;
+ }
+ .rev-img img{
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     object-fit: cover;
+     object-position: center;
+     border: 2px solid var(--second-color);
+ }
+ .reviews-container .box {
+     margin-bottom: 2rem;
+     background-color: rgba(1, 7, 66, 0.815) ;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     padding: 20px;
+     box-shadow: 1px 4px 41px rgba(0,0,0.1);
+     border-radius: 0.5rem;
+ }
+ .reviews-container .box h2{
+     font-size: 1.1rem;
+     font-weight: 600;
+     margin: 0.5rem 0 0.5rem;
+     color: #fff;
+ }
+ .reviews-container .box p {
+     font-style: italic;
+     color: #fff;
+ }
+ .reviews-container .box .stars .fas{
+            color: sandybrown;
+ }
+ /*End of Reviews*/
+ 
+ .newsletter{
+     background-position: center;
+     background-size: cover;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./Night.jpg);
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     box-shadow:1px 4px 41px rgba(0,0,0.1); ;
+ }
+ .newsletter h2{
+     color: rgb(255, 255, 255);
+     font-size: 1.8rem;
+ }
+ .newsletter .box{
+     margin-top: 1rem;
+     background:rgba(1, 7, 66, 0.815) ;
+     border-radius: 25px;
+     padding: 4px 8px;
+     width: 350px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .newsletter .box input {
+     border-radius: 1.5rem;
+     border: none;
+     outline: none;
+ }
+ .newsletter .box .btn{
+     background: rgba(1, 7, 66, 0.815) ;
+     color: #fff;
+     padding: 8px 20px;
+     border-radius: 0.5rem;
+ }
+ .copyright h1{
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: #fff;
+ }
+ .copyright p{
+     color: #fff;
+     text-align: center;
+ }
+
+ .socials{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ }
+ .socials a{
+     color: #fff;
+     padding: 10px;
+     font-size: 20px;
+     text-decoration: none;
+} 
+
+
+/*End of Hamb*/
+/*End of Footer*/
+/*End of Index*/
+/*Start of Stories*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navStories{
+    flex: 1;
+    text-align: right;
+}
+.navStories ul,li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+.navStories ul,li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+.navStories ul,li a:hover{
+    color: rgb(0, 0, 187);
+    text-decoration: none;
+}
+
+.navStories ul,li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+   
+}
+.navStories ul,li:hover::after{
+      width: 100%;
+}
+
+
+.logoStories{
+    padding: 10px 40px 0; 
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+.containerRide{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(133, 133, 133, 0.7),rgba(133,133,133,0.7)), url(./Stories/StoriesLogo.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.along h1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.along h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(57, 3, 184, 0.8);
+}
+
+
+.text {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px;
+  position: absolute;
+  bottom: 8px;
+  left: 60px;
+  width: 75%;
+  background: rgba(0, 0, 0, 0.479);
+  margin-top: 50px;
+  margin-left: 50px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgb(1, 1, 1 / 5%);
+  
+}
+.text h2{
+    font-size: 3em;
+}
+.text p{
+    font-size: 20px;
+}
+
+
+.numbertext {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgba(57, 3, 184, 0.8);
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+} 
+.newsletterStories{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:1px 4px 41px rgba(0,0,0.1); ;
+}
+.newsletterStories h2{
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+}
+.newsletterStories .box{
+    margin-top: 1rem;
+    background:rgba(1, 7, 66, 0.815) ;
+    border-radius: 25px;
+    padding: 4px 8px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.newsletterStories .box input {
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+}
+.newsletterStories .box .btn{
+    background: rgba(1, 7, 66, 0.815) ;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 0.5rem;
+}
+.copyright h1{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.copyright p{
+    color: #fff;
+    text-align: center;
+}
+
+.socials{
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+.socials a{
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+} 
+.socials a:hover{
+    color: blue;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+   /*Hamb*/
+nav .navStories {
+    display: flex;
+    list-style: none;
+}
+  nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+ nav .navStories .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+@media (max-width: 700px){
+    .text{
+    display: grid;
+ font-size: 10px;
+  position: absolute;
+  bottom: 8px;
+  height: 60%;
+  width: 60%;
+  background: rgba(0, 0, 0, 0.479);
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 5px;
+        }
+    .text h2{
+      font-size: 15px;
+      
+    }
+    .text p{
+        font-weight: bold;
+       font-size: 10px;
+       overflow: hidden;
+
+    }
+    nav .navStories {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease-in-out;
+        display: none;
+        text-align: center;
+    }
+    nav .navStories .closeMenu  {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .navStories li a{
+        font-size: 25px;
+    }
+    nav .navStories li a:hover{
+        background: none;
+        color: rgb(3, 1, 102);
+    }
+    nav .navStories {
+        background-color: rgb(0, 0, 0);
+    }
+    .newsletterStories h2{
+        text-align: center;
+    }
+ }
+/*End of Hamb*/
+/*End of Stories*/
+/*Start of Car Parts*/ 
+.logoParts{
+    padding: 10px 40px 0; 
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+/*Hamb*/
+nav .navLinkParts {
+    display: flex;
+    list-style: none;
+}
+  nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+ nav .navLinkParts .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.navLinkParts{
+    flex: 1;
+    text-align: right;
+}
+.navLinkParts ul,li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+.navLinkParts ul,li a{
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navLinkParts ul,li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navLinkParts ul,li:hover::after{
+      width: 100%;  }
+
+     
+      
+.containerParts{
+    min-height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./Logo/logocarparts.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.container-fas .fas{
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+}
+
+.containerParts h2{
+     
+      width: 100%;
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      text-align: center;
+      padding:20px
+  }
+.containerParts p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding:10px
+}
+.row-parts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    grid-column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow:1px 4px 41px rgb(255, 255, 255); ;
+} 
+
+.product-top img {
+    width: 100%;
+    height: 200px;
+    border: 5px solid #000;
+}
+.header-parts {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.gold_star{
+   color: sandybrown;
+   font-size: 16px;
+}
+.product-bottom h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.product-bottom h5{
+    font-size: 15px;
+    color: white;
+}
+.btn-secondary{
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.containerSponsors h1{
+     font-size: 40px;
+     color: white;
+     text-align: center;
+}
+.sponsorsImage{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    grid-column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: auto;
+}
+.newsletterParts{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:1px 4px 41px rgba(0,0,0.1); ;
+}
+  .newsletterParts h2{
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+}
+.newsletterParts .box{
+    align-items: center;
+    margin-top: 1rem;
+    background:rgba(1, 7, 66, 0.815) ;
+    border-radius: 25px;
+    padding: 4px 8px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.newsletterParts .box input {
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+}
+.newsletterParts .box .btn{
+    background: rgba(1, 7, 66, 0.815) ;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 0.5rem;
+}
+.copyright h1{
+    font-size: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.copyright p{
+    color: #fff;
+    text-align: center;
+}
+
+.socials{
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+.socials a{
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+} 
+.socials a:hover{
+    color: blue;
+}
+/*Hamb*/
+nav .navLinkParts {
+    display: flex;
+    list-style: none;
+}
+  nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+ nav .navLinkParts .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    nav .navLinkParts {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease-in-out;
+        display: none;
+        text-align: center;
+    }
+    nav .navLinkParts .closeMenu  {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .navLinkParts li a{
+        font-size: 25px;
+    }
+    nav .navLinkParts li a:hover{
+        background: none;
+        color: rgb(3, 1, 102);
+    }
+    nav .navLinkParts {
+        background-color: rgb(0, 0, 0);
+    }
+    .newsletterParts h2{
+        text-align: center;
+    }
+ }
+/*End of Hamb*/
+
+ /*End of Parts!*/
+/*Start of About*/
+.logoAbout{   
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 2px; 
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navAbout{
+    flex: 1;
+    text-align: right;
+}
+.navAbout ul,li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+.navAbout ul,li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navAbout ul,li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navAbout ul,li:hover::after{
+      width: 100%;
+}
+ .containerBanner {
+     width: 100%;
+     height: 100vh;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .containerBanner video{
+     position: absolute;
+     top: 0;
+     left: 0;
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+     pointer-events: none;
+ }
+ .containerBanner .content{
+     position: relative;
+     z-index: 1;
+     max-width: 1000px;
+     margin: 0 auto;
+     text-align: center;
+     box-shadow: 3px 4px 30px rgb(0, 0, 0);
+ }
+ .containerBanner .content h1{
+     font-size: 80px;
+     text-transform: uppercase;
+     color: rgb(255, 255, 255);
+ }
+ .containerBanner .content h2{
+     font-size: 40px;
+     color: rgb(255, 255, 255);
+ }
+ .containerBanner .content p{
+     font-size: 20px;
+     text-transform: uppercase;
+     color: rgb(255, 255, 255);
+ }
+ 
+ /*Hamb*/
+nav .navAbout {
+    display: flex;
+    list-style: none;
+}
+  nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+ nav .navAbout .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+@media(max-width: 700px){
+    nav .navAbout {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease-in-out;
+        display: none;
+        text-align: center;
+    }
+    nav .navAbout .closeMenu  {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .navAbout li a{
+        font-size: 25px;
+    }
+    nav .navAbout li a:hover{
+        background: none;
+        color: rgb(3, 1, 102);
+    }
+    nav .navAbout {
+        background-color: rgb(0, 0, 0);
+    }
+}
+/*End of Hamb*/
+ /*End of About*/
+ /*Start of Contact*/
+ .navLinkContact{
+    flex: 1;
+    text-align: right;
+}
+.navLinkContact ul,li{
+    list-style: none;
+    display: inline-block;
+}
+.navLinkContact ul,li a{
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navLinkContact ul,li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navLinkContact ul,li:hover::after{
+      width: 100%;  }
+ .containerContact {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./Logo/logocontact.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+ }
+ .active{
+     background-color: rgb(255, 255, 255);
+ }
+ .logoContact{
+     padding: 10px 40px 0;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 2px;
+ }
+ 
+ h1{
+     text-align: center;
+     font-size: 20px;
+     color: white;
+ }
+ .accordion{
+     width: 90%;
+     max-width: 1000px;
+     margin: 2rem auto;
+ }
+ .accordion-item {
+     color: rgb(26, 0, 87);
+     margin: 1rem 0;
+     border-radius: 0.5rem;   
+ }
+ .accordion-item-body-content .fas{
+     font-size: 15px;
+     color: #000000;
+     margin-left: 4px;
+ }
+ .accordion-item-header {
+     padding: 0.5rem 3rem 0.5rem 1rem;
+     min-height: 3.5rem;
+     line-height: 1.25rem;
+     font-weight: bold;
+     display: flex;
+     align-items: center;
+     position: relative;
+     cursor: pointer;
+ }
+ .accordion-item-header p{
+     font-size: 20px;
+ }
+ .accordion-item-header::after{
+     content: '\25BE';
+     font-size: 2rem;
+     position: absolute;
+     right: 1rem;
+ }
+ .accordion-item-header.active::after{
+     transform: rotate(180deg); 
+ }
+ .accordion-item-body {
+     max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+   border-top: 3px solid;
+   border-image: linear-gradient(to right, #1105b3, #80026f) 1;
+ }
+ .accordion-item-body p{
+     font-size: 25px;
+ }
+ .accordion-item-body-content { 
+  padding: 1rem;
+   line-height: 1.5rem;
+  border-top: 3px solid rgb(0, 0, 0);
+ }
+ .accordion-item-body-content .fas{
+     font-size: 30px;
+ }
+
+ #output{
+        font-size: 17px;
+        margin-bottom: 3px;
+        font-weight: bold;
+        text-align: center;   
+    
+ }
+
+    .newsletterContact{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow:1px 4px 41px rgba(0,0,0.1); ;
+    }
+    .newsletterContact h2{
+        color: rgb(255, 255, 255);
+        font-size: 1.8rem;
+    }
+    .newsletterContact .box{
+        margin-top: 1rem;
+        background:rgba(1, 7, 66, 0.815) ;
+        border-radius: 25px;
+        padding: 4px 8px;
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .newsletterContact .box input {
+        border-radius: 1.5rem;
+        border: none;
+        outline: none;
+    }
+    .newsletterContact .box .btn{
+        background: rgba(1, 7, 66, 0.815) ;
+        color: #fff;
+        padding: 8px 20px;
+        border-radius: 0.5rem;
+    }
+    .copyright h1{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+    }
+    .copyright p{
+        color: #fff;
+        text-align: center;
+    }
+   
+    .socials{
+       justify-content: center;
+       align-items: center;
+       display: flex;
+    }
+    .socials a{
+        color: #fff;
+        padding: 10px;
+        font-size: 20px;
+        text-decoration: none;
+   } 
+   /*Hamb*/
+nav .navLinkContact {
+    display: flex;
+    list-style: none;
+}
+  nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+ nav .navLinkContact .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    nav .navLinkContact {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease-in-out;
+        display: none;
+        text-align: center;
+    }
+    nav .navLinkContact .closeMenu  {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .navLinkContact li a{
+        font-size: 25px;
+    }
+    nav .navLinkContact li a:hover{
+        background: none;
+        color: rgb(3, 1, 102);
+    }
+    nav .navLinkContact {
+        background-color: rgb(0, 0, 0);
+    }
+    .newsletterContact h2{
+        text-align: center;
+    }
+ }
+/*End of Hamb*/
+
+      /*End of Contact*/
+      /*Start of Gallery*/
+    .logoGallery{
+            padding: 10px 40px 0; 
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            font-size: 22px;
+            letter-spacing: 2px;
+        }
+    
+    nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navGallery{
+        flex: 1;
+        text-align: right;
+    }
+    .navGallery ul,li{
+        list-style: none;
+        display: inline-block;
+    }
+    .navGallery ul,li a{
+        color: rgb(255, 251, 251);
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    .navGallery ul,li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .navGallery ul,li:hover::after{
+          width: 100%;  }
+    
+
+      .containerGallery{
+
+          width: 100%;
+          height: 100%;
+          background-color: #000000;
+      }
+      .containerGallery h4{
+          color: white;
+      }
+      .containerGallery h1{
+          padding: 10px;
+          text-align: center;
+          font-size: 50px;
+          color: #ffffff;
+      }
+      .item img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+      .item {
+          transition: 5s ease-in-out;
+      }
+      .item:hover {
+       filter: brightness(80%);
+      }
+      .newsletterGallery{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./Night.jpg); 
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow:1px 4px 41px rgba(0,0,0.1); ;
+    }
+      .newsletterGallery h2{
+        color: rgb(255, 255, 255);
+        font-size: 1.8rem;
+    }
+    .newsletterGallery .box{
+        align-items: center;
+        margin-top: 1rem;
+        background:rgba(1, 7, 66, 0.815) ;
+        border-radius: 25px;
+        padding: 4px 8px;
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .newsletterGallery .box input {
+        border-radius: 1.5rem;
+        border: none;
+        outline: none;
+    }
+    .newsletterGallery .box .btn{
+        background: rgba(1, 7, 66, 0.815) ;
+        color: #fff;
+        padding: 8px 20px;
+        border-radius: 0.5rem;
+    }
+    .copyright h1{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+    }
+    .copyright p{
+        color: #fff;
+        text-align: center;
+    }
+    
+    .socials{
+       justify-content: center;
+       align-items: center;
+       display: flex;
+    }
+    .socials a{
+        color: #fff;
+        padding: 10px;
+        font-size: 20px;
+        text-decoration: none;
+    
+    } 
+    /*Hamb*/
+nav .navGallery {
+    display: flex;
+    list-style: none;
+}
+  nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+ nav .navGallery .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    nav .navGallery {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease-in-out;
+        display: none;
+        text-align: center;
+    }
+    nav .navGallery .closeMenu  {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .navGallery li a{
+        font-size: 25px;
+    }
+    nav .navGallery li a:hover{
+        background: none;
+        color: rgb(3, 1, 102);
+    }
+    nav .navGallery {
+        background-color: rgb(0, 0, 0);
+    }
+    .newsletterGallery h2{
+       text-align: center;
+    }
+ }
+/*End of Hamb*/
